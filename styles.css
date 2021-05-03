@@ -14,6 +14,51 @@ body {
   margin-top: 5%;
 }
 
+.error {
+  position: absolute;
+  display: flex;
+  margin-top: 5%;
+  width: 100%;
+  margin-left: -80.9%;
+  color: hsl(0, 87%, 67%);
+  font-size: 12px;
+  font-style: italic;
+}
+
+.card-links {
+  position: absolute;
+  margin-top: 0%;
+  padding-bottom: 0%;
+  padding-top: 10%;
+}
+
+.card-links .card {
+  width: 46.5rem;
+  margin-left: 43%;
+  margin-top: 5%;
+  padding-bottom: 7%;
+}
+
+.card-links .card p {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.card-links .card .btn {
+  width: 70px;
+  background-color: red;
+  margin-left: 655px;
+  margin-bottom: -5%;
+  margin-top: -43px;
+}
+
+.card-links .card .text-muted {
+  margin-left: 474px;
+  margin-top: -53px;
+  padding-top: 16px;
+  color: hsl(180, 66%, 49%) !important;
+}
+
 .image img {
   float: right;
   width: 665px;
@@ -27,7 +72,7 @@ body {
 
 .heading p {
   margin-left: 5%;
-  font-size: 27px;
+  font-size: 30px;
 }
 
 #start-btn {
@@ -69,15 +114,24 @@ body {
 
 #link-url {
   font-family: "Poppins", sans-serif;
+  display: inline !important;
 }
+
+#link-url:focus {
+  box-shadow: none;
+}
+
 #card-box .card {
   position: absolute;
-  margin: 2% 0 0 -50px;
+  margin: 5% 0 0 -52px;
   width: 55%;
   padding: 10px 10% 1% 0;
   background: #3a3053;
   background-image: url("./images/bg-shorten-desktop.svg");
   background-repeat: round;
+}
+.nav-line {
+  display: none;
 }
 
 .g button {
@@ -103,7 +157,7 @@ body {
 }
 .second {
   background: #f0f1f6;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 
 .text {
@@ -191,9 +245,10 @@ div.col-sm:nth-child(1) > hr:nth-child(2) {
 
 .last {
   background-color: hsl(257, 27%, 26%);
-  background-image: url("images/bg-shorten-desktop.svg");
+  background-image: url("images/bg-boost-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 3%;
 }
 
 .heading-last {
@@ -250,7 +305,6 @@ footer li {
 }
 
 #icons {
-  flex-direction: row;
   width: 60px;
   flex-flow: row;
   margin-top: -186px;
@@ -265,7 +319,57 @@ footer li {
   color: hsl(228, 45%, 44%);
 }
 
+.hidden {
+  display: none;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
+  #navbarSupportedContent {
+    text-align: center;
+    padding-top: 5%;
+    background-color: hsl(257, 27%, 26%);
+    padding-bottom: 15%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .navbar-nav > hr:nth-child(4) {
+    width: 245px;
+    margin-left: 5%;
+    height: 2px;
+    color: white;
+  }
+
+  #cards-details > div:nth-child(1) > hr:nth-child(3) {
+    display: none;
+  }
+
+  div.col-sm:nth-child(1) > hr:nth-child(2) {
+    display: none;
+  }
+
+  #navbarSupportedContent li {
+    color: white;
+    padding-top: 10px;
+  }
+
+  a.btn:nth-child(2) {
+    background-color: #2bd1d1;
+    margin-left: 10%;
+    margin-right: 30%;
+    width: 85%;
+    color: white;
+    margin-top: 5%;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+  }
+
+  a.btn:nth-child(1) {
+    color: white;
+  }
+
   .navbar-toggler {
     border: none;
   }
@@ -317,7 +421,90 @@ footer li {
     font-size: 15px;
   }
 
-  hr {
-    display: none;
+  #cards-details .card {
+    width: 18rem;
+    margin-left: -4%;
+  }
+  .rounded-background {
+    margin-left: 28%;
+    margin-top: -23%;
+    width: 75px;
+    height: 75px;
+  }
+  .rounded-background img {
+    margin: 16px;
+  }
+  div.col-sm:nth-child(1) > div:nth-child(1) {
+    margin-top: 10%;
+  }
+  div.col-sm:nth-child(2) > div:nth-child(1) {
+    margin-top: 20%;
+  }
+  div.col-sm:nth-child(4) > div:nth-child(1) {
+    margin-top: 20%;
+  }
+  #cards-details .card-title {
+    text-align: center;
+  }
+
+  #cards-details .card-text {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .last {
+    background-image: url("images/bg-boost-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 15%;
+  }
+
+  .heading-last > h3:nth-child(1) {
+    font-size: 24px;
+    margin-top: 40%;
+  }
+
+  footer {
+    padding-bottom: 20%;
+  }
+
+  footer .footer-heading img {
+    width: 145px;
+    margin-left: 30%;
+    margin-top: 5%;
+  }
+
+  div.col:nth-child(2) {
+    margin-left: 30%;
+    margin-top: 10%;
+  }
+
+  footer li {
+    color: hsl(0, 0%, 75%);
+    list-style: none;
+    padding-top: 15px;
+    text-align: center;
+    margin-left: -40%;
+  }
+
+  footer .display-3 {
+    font-size: 20px;
+    text-align: center;
+    margin-left: -18%;
+  }
+  div.col:nth-child(3) {
+    margin-left: 30%;
+    margin-top: 5%;
+  }
+
+  div.col:nth-child(4) {
+    margin-left: 30%;
+    margin-top: 5%;
+  }
+
+  #icons {
+    margin-left: 13%;
+    width: 45px;
+    margin-top: 10%;
   }
 }

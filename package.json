@@ -1,0 +1,14 @@
+{
+  "name": "url-shortner",
+  "version": "1.0.0",
+  "description": "![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saksham Mathur",
+  "license": "ISC",
+  "dependencies": {
+    "clipboard": "^2.0.8"
+  }
+}
