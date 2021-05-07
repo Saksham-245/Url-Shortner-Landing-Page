@@ -33,10 +33,18 @@ shortenUrl.addEventListener("click", (e) => {
                     <div class="card card-result">
                       <p>http://google.com</p>
                       <p class="text-muted">  http://google.com</p>
-                      <button class="btn">Copy</button>
+                      <button class="btn copy">Copy</button>
                       </div>
                       `;
     cardLinksGenerate.insertAdjacentHTML("afterbegin", markup);
+    const copyButton = document.querySelector(".copy");
+
+    copyButton.addEventListener("click", () => {
+      copyButton.style.backgroundColor = "cyan";
+      copyButton.style.fontSize = "11px";
+      copyButton.textContent = "Copied!";
+    });
+
     const cardsLink = document.querySelectorAll(".card-result");
     if (cardsLink.length > 1) {
       secondHeading.style.marginTop = 15 + 20 + "%";
